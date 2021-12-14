@@ -1,0 +1,43 @@
+{
+    "name": "Non Phonegibles 1",
+    "symbol": "",
+    "seller_fee_basis_points": 500,
+    "image": "1.png",
+    "attributes": [
+      {
+        "trait_type": "slatt1",
+        "value": "yes"
+      },
+      {
+        "trait_type": "slatty boy",
+        "value": "yes"
+     },
+     {
+        "trait_type": "slattsational",
+        "value": "yes"
+      }
+    ],
+    "collection": {
+       "name": "Non Phonegibles",
+       "family": "Boing!"
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "1.png",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "F2tv5fjoMvbrJ6uU5xTfnwNKGKcqE2rg4k69WT3P1u7v",
+          "share": 75
+        },
+        {
+          "address": "2UUHAXTFXYsbG6tsKV4n4YgH9W12JykEc4BAgpzXMUoN",
+          "share": 25
+        }
+      ]
+    }
+  }
