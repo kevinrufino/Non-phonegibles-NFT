@@ -27,6 +27,7 @@
       "react-app/jest"
     ]
   },
+  "eslintIgnore": ["CandyMachine/index.js", "CountdownTimer/index.js", "index.js"],
   "browserslist": {
     "production": [
       ">0.2%",
