@@ -4,6 +4,7 @@ import "./CountdownTimer.css";
 const CountdownTimer = ({ dropDate }) => {
   // State
   const [timerString, setTimerString] = useState("");
+  let dropDateVar = dropDate;
 
   // Our useEffect will run on component load
   useEffect(() => {
@@ -12,7 +13,7 @@ const CountdownTimer = ({ dropDate }) => {
     // Use setInterval to run this piece of code every second
     const interval = setInterval(() => {
       const currentDate = new Date().getTime();
-      const distance = dropDate - currentDate;
+      const distance = dropDateVar - currentDate;
 
       // Here it's as easy as doing some time math to get the different properties
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
