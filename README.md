@@ -7,7 +7,7 @@ To get started with this course, clone this repo and follow these commands:
 3. Run `npm run start` to start the project
 4. Start coding!
 
-###NFTs
+### NFTs
 To view the minted NFTs or mint your own NFTs:
 
 1. Head to your Phantom wallet and select the settings icon
