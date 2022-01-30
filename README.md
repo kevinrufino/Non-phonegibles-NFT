@@ -7,6 +7,14 @@ To get started with this course, clone this repo and follow these commands:
 3. Run `npm run start` to start the project
 4. Start coding!
 
+###NFTs
+To view the minted NFTs or mint your own NFTs:
+
+1. Head to your Phantom wallet and select the settings icon
+2. Go to select network
+3. Change your network to the DevNet
+4. Enjoy :) 
+
 ### What is the .vscode Folder?
 If you use VSCode to build your app, we included a list of suggested extensions that will help you build this project! Once you open this project in VSCode, you will see a popup asking if you want to download the recommended extensions :).
 
