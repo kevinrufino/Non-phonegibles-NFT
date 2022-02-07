@@ -1,6 +1,15 @@
 .machine-container {
   display: flex;
   flex-direction: column;
+  font-family: Cloude;
+  font-size: 48px;
+}
+
+@font-face {
+  font-family: 'Cloude';
+  font-weight: normal;
+  font-size: xx-large;
+  src: local('Cloude'), url('../assets/Cloude_Regular_1.02.otf') format('opentype');
 }
 
 .gif-container {

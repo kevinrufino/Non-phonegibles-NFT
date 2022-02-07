@@ -1,41 +1,73 @@
 .App {
   height: 100vh;
-  background-color: rgb(20, 20, 20);
-  overflow: scroll;
+  background-color: rgba(63,111,208,255);
+  overflow: auto;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  background-image: url('assets/Website_Page_1.gif'), url('assets/Website_Page_2.gif');
+  background-size: 100%, 100%;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: left top, center bottom;
+  /* position: absolute; */
+  /* padding:0 , 0;
+  margin:0 , 0; */
 }
 
 .container {
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 30px 0 30px;
+  /* justify-content: center;
+  align-items: center;
+  margin: auto; */
+  /* min-height: min-content; */
+  /* padding: 30px 30px 30px 30px; */
+  /* padding-bottom: 50px; */
+  /* margin-top: 50px; */
   color: white;
-  position: relative;
-  /* background-color: #35aee2; */
 }
 
-.authed-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
+.logo {
+  width: 768px;
 }
 
-.header-container {
-  /* background-color: #60c657; */
+@font-face {
+  font-family: 'Cloude';
+  font-weight: normal;
+  font-size: xx-large;
+  src: local('Cloude'), url('assets/Cloude_Regular_1.02.otf') format('opentype');
 }
 
 .header {
   margin: 0;
-  font-size: 50px;
+  font-size: 100px;
   font-weight: bold;
+  font-family: Cloude;
 }
 
 .sub-text {
-  font-size: 25px;
+  margin: auto;
+  font-size: 50px;
+  width: 50%;
+  font-family: Cloude;
+}
+
+@media only screen and (max-width: 600px) {
+  .sub-text {
+    margin: auto;
+    font-size: 50px;
+    width: 100%;
+    font-family: Cloude;
+  }
+  .logo {
+    width: 90%;
+  }
+}
+
+.sub-text-box {
+  width: 90%;
+  margin: auto;
 }
 
 .gradient-text {
@@ -53,8 +85,9 @@
   padding-right: 40px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 48px;
   font-weight: bold;
+  font-family: Cloude;
 }
 
 .connect-wallet-button {
@@ -75,11 +108,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   bottom: 0;
   left: 0;
-  /* padding-bottom: 45px; */
+  padding-bottom: 45px;
+  padding-top: 1%;
 }
 
 .twitter-logo {
@@ -88,9 +122,10 @@
 }
 
 .footer-text {
-  font-size: 16px;
+  font-size: 48px;
   font-weight: bold;
   color: white;
+  font-family: Cloude;
 }
 
 .connected-container input[type='text'] {
@@ -98,7 +133,8 @@
   padding: 10px;
   width: 50%;
   height: 60px;
-  font-size: 16px;
+  font-size: 48px;
+  font-family: Cloude;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.25);
   border: none;

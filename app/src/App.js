@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import CandyMachine from './CandyMachine';
+import banner from './assets/Website_Banner.png'
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'nonphonegibles';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
@@ -88,12 +89,35 @@ const App = () => {
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">🍭 Candy Drop</p>
-          <p className="sub-text">NFT drop machine with fair mint</p>
+          <p className='logo'></p>
+          <img className='logo' src={banner} alt="Logo" />
+          <p className="header">World of NPTs</p>
+          <div className='sub-text-box'>
+            <p className="sub-text">In the year 2021 a huge EMP accidentally blew up in the power grid, destroying all of technology as we know it. Humans rebuilt as quickly as possible but their efforts were in vain as the heads of centralized power were more interested in their own well-being rather than focus on humanity as a whole.</p>
+            <p></p>
+            <p className="sub-text">In reaction to this, a group of stoned engineers decided to create a sentient form of decentralized goverenance to fix the grid and the Non-Phonegibles were formed! A collection of 4444 supernatural phones that act as the computing powers of all of earth. These phones serve extremely useful powers to it's owners and users as they have early access to the sweet sweet world web 3.</p>
+            <p></p>
+            <p className="sub-text">By buying a NPT you are allowing the team to donate real phones to people in poor underpriveldged areas.</p>
+            <p></p>
+          </div>
+          <p className='header'>Road Map:</p>
+          <div className='sub-text-box'>
+            <p className='sub-text'>25% Sold: Donate 500 Phones</p>
+            <p></p>
+            <p className='sub-text'>50% Sold: Donate 1000 Phones</p>
+            <p></p>
+            <p className='sub-text'>75% Sold: Donate 1500 Phones</p>
+            <p></p>
+            <p className='sub-text'>100% Sold: Donate 2000 Phones</p>
+            <p></p>
+          </div>
           {!walletAddress && renderNotConnectedContainer()}
+        {/* </div> */}
+          {/* Check for walletAddress and then pass in walletAddress */}
+          {walletAddress && <CandyMachine walletAddress={window.solana} />}
+
         </div>
-        {/* Check for walletAddress and then pass in walletAddress */}
-        {walletAddress && <CandyMachine walletAddress={window.solana} />}
+
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
@@ -101,7 +125,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`Follow us @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>

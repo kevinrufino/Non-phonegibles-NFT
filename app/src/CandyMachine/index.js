@@ -349,13 +349,20 @@ const CandyMachine = ({ walletAddress }) => {
       data: Buffer.from([]),
     });
   };
+  let PhonegiblesCounter = 0;
+
+  const increment = () => {
+    PhonegiblesCounter++
+    return PhonegiblesCounter;
+  }
 
   const renderMintedItems = () => (
     <div className="gif-container">
-      <p className="sub-text">Minted Items ✨</p>
+      <p className="sub-text">Minted Phonegibles ✨</p>
       <div className="gif-grid">
         {mints.map((mint) => (
           <div className="gif-item" key={mint}>
+            <p>nonphonegibles #{increment()}</p>
             <img src={mint} alt={`Minted NFT ${mint}`} />
           </div>
         ))}
